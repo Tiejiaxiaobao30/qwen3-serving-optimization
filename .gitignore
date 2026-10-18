@@ -1,0 +1,32 @@
+# Local environments and generated assets
+.venv/
+venv/
+*_env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.cache/
+.ipynb_checkpoints/
+assets/
+models/
+adapters/
+checkpoints/
+*.safetensors
+*.bin
+*.pt
+*.pth
+dist/
+tmp/
+temp/
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pid
+*.bak*
+# Keep results/gpu and reports logs for reproducibility.

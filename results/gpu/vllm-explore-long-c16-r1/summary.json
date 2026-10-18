@@ -1,0 +1,44 @@
+{
+  "requested": 32,
+  "successful": 32,
+  "failed": 0,
+  "duration_s": 5.6822154726833105,
+  "success_req_per_s": 5.631606220115524,
+  "output_tok_per_s": 720.845596174787,
+  "latency_population": "successful requests only; failures reported separately",
+  "percentile_method": "linear interpolation",
+  "tpot_note": "estimated from first/last content event and server token count; not per-token ITL",
+  "slo": null,
+  "queue_ms": {
+    "p50": 1408.997238613665,
+    "p95": 2831.033571716398,
+    "mean": 1416.1801589652896
+  },
+  "ttft_ms": {
+    "p50": 224.04765989631414,
+    "p95": 246.11061215400696,
+    "mean": 227.4849607492797
+  },
+  "e2e_ms": {
+    "p50": 2818.4594763442874,
+    "p95": 2854.531305702403,
+    "mean": 2830.659551633289
+  },
+  "offered_ttft_ms": {
+    "p50": 1582.3417310602963,
+    "p95": 3049.8164848424494,
+    "mean": 1643.6651197145693
+  },
+  "offered_e2e_ms": {
+    "p50": 4203.974477481097,
+    "p95": 5680.195471365005,
+    "mean": 4246.839710598579
+  },
+  "tpot_estimate_ms": {
+    "p50": 20.596776271282923,
+    "p95": 20.697507326029182,
+    "mean": 20.457117429404615
+  },
+  "evidence_kind": "gpu_exploration",
+  "load_mode": "bulk_batch_with_concurrency_limit"
+}

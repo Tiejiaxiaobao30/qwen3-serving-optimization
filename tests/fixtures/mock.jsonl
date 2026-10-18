@@ -1,0 +1,4 @@
+{"request_id":"mock-0","prompt":"valid","prompt_tokens":3,"max_tokens":3,"ignore_eos":true}
+{"request_id":"mock-1","prompt":"valid","prompt_tokens":3,"max_tokens":3,"ignore_eos":true}
+{"request_id":"mock-2","prompt":"valid","prompt_tokens":3,"max_tokens":3,"ignore_eos":true}
+{"request_id":"mock-3","prompt":"valid","prompt_tokens":3,"max_tokens":3,"ignore_eos":true}

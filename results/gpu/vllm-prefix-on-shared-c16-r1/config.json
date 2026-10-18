@@ -1,0 +1,20 @@
+{
+  "base_url": "http://127.0.0.1:8000",
+  "model": "qwen3-sft42",
+  "workload": "workloads/v1/explore_long_shared.jsonl",
+  "output": "results/gpu/vllm-prefix-on-shared-c16-r1",
+  "concurrency": 16,
+  "request_rate": null,
+  "timeout": 120,
+  "limit": 32,
+  "ttft_slo_ms": null,
+  "e2e_slo_ms": null,
+  "evidence_kind": "gpu_exploration",
+  "created_at": "2026-10-18T05:11:28.728969+00:00",
+  "python": "3.12.3",
+  "httpx": "0.28.1",
+  "workload_sha256": "2ea7227dfced7a8586e879e22727ad213c0550e47843ca1870bc46ebffa0c59d",
+  "load_mode": "bulk_batch_with_concurrency_limit",
+  "warmup": "none in this command; must be performed separately and cache state recorded",
+  "backend_facts": "engine/model/GPU config must be collected separately; not inferred from endpoint"
+}

@@ -1,0 +1,20 @@
+{
+  "base_url": "http://127.0.0.1:8000",
+  "model": "qwen3-sft42",
+  "workload": "workloads/v1/confirm_long_shared.jsonl",
+  "output": "results/gpu/vllm-confirm-shared-off-c8-r2",
+  "concurrency": 8,
+  "request_rate": null,
+  "timeout": 120,
+  "limit": 200,
+  "ttft_slo_ms": null,
+  "e2e_slo_ms": null,
+  "evidence_kind": "gpu_confirmation",
+  "created_at": "2026-10-18T05:24:36.639486+00:00",
+  "python": "3.12.3",
+  "httpx": "0.28.1",
+  "workload_sha256": "163f3d7c2dac3f62c853fdd72f305b836c63ca6a00389450bd6b761754d8f663",
+  "load_mode": "bulk_batch_with_concurrency_limit",
+  "warmup": "none in this command; must be performed separately and cache state recorded",
+  "backend_facts": "engine/model/GPU config must be collected separately; not inferred from endpoint"
+}

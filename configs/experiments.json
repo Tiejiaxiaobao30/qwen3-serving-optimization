@@ -1,0 +1,30 @@
+{
+  "status": "planned_not_run",
+  "model": "Qwen3-1.7B-Base + verified SFT seed42 adapter, merged FP16",
+  "context_length": 2048,
+  "tensor_parallel_size": 1,
+  "gpu": "choose one available compatible instance; same physical GPU for both engines",
+  "exploration": {
+    "engine": "vllm",
+    "workloads": ["explore_short", "explore_long_unique"],
+    "concurrency": [1, 4, 8, 16],
+    "limit": 16,
+    "repeats": 1
+  },
+  "cache_ablation": {
+    "workloads": ["explore_long_unique", "explore_long_shared"],
+    "cache": ["off", "on"],
+    "concurrency": "one value chosen after exploration",
+    "cache_reset_between_conditions": true
+  },
+  "confirmation": {
+    "engines": ["vllm", "sglang"],
+    "workloads": ["confirm_short", "confirm_long_unique", "confirm_long_shared"],
+    "selection": "subset frozen after exploration; do not execute full Cartesian product",
+    "requests_per_run_target": 200,
+    "repeats_target": 3,
+    "ttft_slo_ms": null,
+    "e2e_slo_ms": null,
+    "freeze_before_confirmation": true
+  }
+}

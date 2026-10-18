@@ -1,0 +1,20 @@
+{
+  "base_url": "http://127.0.0.1:8000",
+  "model": "qwen3-sft42",
+  "workload": "workloads/v1/confirm_long_unique.jsonl",
+  "output": "results/gpu/vllm-final-unique-on-c8-r3",
+  "concurrency": 8,
+  "request_rate": null,
+  "timeout": 120,
+  "limit": 200,
+  "ttft_slo_ms": null,
+  "e2e_slo_ms": null,
+  "evidence_kind": "gpu_confirmation",
+  "created_at": "2026-10-18T08:47:34.577067+00:00",
+  "python": "3.12.3",
+  "httpx": "0.28.1",
+  "workload_sha256": "71232692af52739fdabef9d2e45f924b3233c198a5d8b00b80ccd33fc15dc05d",
+  "load_mode": "bulk_batch_with_concurrency_limit",
+  "warmup": "none in this command; must be performed separately and cache state recorded",
+  "backend_facts": "engine/model/GPU config must be collected separately; not inferred from endpoint"
+}

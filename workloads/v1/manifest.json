@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "status": "constructed, not GPU-tested",
+  "tokenizer_sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+  "seed": "no RNG; formula-based IDs",
+  "performance_requests": 696,
+  "quality_requests": 40,
+  "excluded_source": "GSM8K official sealed test; no test files read",
+  "limitations": [
+    "Synthetic workload, not production traffic",
+    "Quality set is easy arithmetic, not a general reasoning benchmark",
+    "Long prompts contain disclosed instructional repetition",
+    "Same lengths do not imply the same semantics or prefill cost"
+  ],
+  "files": [
+    {
+      "file": "explore_short.jsonl",
+      "count": 32,
+      "sha256": "f9f5cceab3d4a368ec12aea8cfc419d5d2aa2afa1fdd738e0fa77379c4584e91",
+      "min_tokens": 128,
+      "max_tokens": 128,
+      "adjacent_shared_prefix_min": 6,
+      "adjacent_shared_prefix_max": 7
+    },
+    {
+      "file": "explore_long_unique.jsonl",
+      "count": 32,
+      "sha256": "539e60806e38247208381725007700792dfeaa898ebb2ee69cf516e026a3f64c",
+      "min_tokens": 1024,
+      "max_tokens": 1024,
+      "adjacent_shared_prefix_min": 6,
+      "adjacent_shared_prefix_max": 7
+    },
+    {
+      "file": "explore_long_shared.jsonl",
+      "count": 32,
+      "sha256": "2ea7227dfced7a8586e879e22727ad213c0550e47843ca1870bc46ebffa0c59d",
+      "min_tokens": 1024,
+      "max_tokens": 1024,
+      "adjacent_shared_prefix_min": 774,
+      "adjacent_shared_prefix_max": 775
+    },
+    {
+      "file": "confirm_short.jsonl",
+      "count": 200,
+      "sha256": "4090ba35a3c0b38625b56bd4b70e4b69a16413c12aae5f1bef613b4fe1113114",
+      "min_tokens": 128,
+      "max_tokens": 128,
+      "adjacent_shared_prefix_min": 5,
+      "adjacent_shared_prefix_max": 7
+    },
+    {
+      "file": "confirm_long_unique.jsonl",
+      "count": 200,
+      "sha256": "71232692af52739fdabef9d2e45f924b3233c198a5d8b00b80ccd33fc15dc05d",
+      "min_tokens": 1024,
+      "max_tokens": 1024,
+      "adjacent_shared_prefix_min": 5,
+      "adjacent_shared_prefix_max": 7
+    },
+    {
+      "file": "confirm_long_shared.jsonl",
+      "count": 200,
+      "sha256": "163f3d7c2dac3f62c853fdd72f305b836c63ca6a00389450bd6b761754d8f663",
+      "min_tokens": 1024,
+      "max_tokens": 1024,
+      "adjacent_shared_prefix_min": 773,
+      "adjacent_shared_prefix_max": 775
+    },
+    {
+      "file": "quality.jsonl",
+      "count": 40,
+      "sha256": "d96c903e798ea373b9d47240af98c3ed00236ae6c84bdbefa6989837f785c544"
+    }
+  ]
+}
